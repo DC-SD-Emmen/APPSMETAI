@@ -1,0 +1,71 @@
+Stappenplan: Brievenhulp in gewone taal
+Stappenplan voor een team van 4 personen
+Doel: een app waarmee je een foto van een brief maakt, waarna AI (vision) de brief uitlegt in B1-Nederlands. De app is bedoeld voor Taalhuis of NT2-docenten. Gebruik alleen voorbeeldbrieven, nooit echte brieven met persoonsgegevens.
+===============================================================================================
+Fase 1: Samen starten (iedereen, ongeveer 1 uur)
+1.  Spreek af hoe de app werkt: foto maken of uploaden, AI leest de brief, en de uitleg verschijnt op het scherm.
+2.  Spreek af wat de AI teruggeeft, zodat iedereen hetzelfde formaat gebruikt. Bijvoorbeeld:
+    ◦ Waar gaat de brief over? (1 zin)
+    ◦ Wat moet ik doen? (stappen)
+    ◦ Voor wanneer? (deadline)
+    ◦ Moeilijke woorden uitgelegd
+3.  Kies de techniek (bijvoorbeeld een no-code/AI-appbouwer of een simpele webapp) en maak samen een gedeelde map of repo.
+4.  Verdeel de rollen hieronder.
+
+Fase 2: Vier aparte taakopstellingen
+===============================================================================================
+Persoon 1: Frontend en camera (het uiterlijk)
+• Maak de startpagina met een grote knop "Maak foto van brief" en een uploadoptie.
+• Zorg dat de camera werkt op telefoon en laptop.
+• Toon een voorbeeld van de foto voordat je hem verstuurt ("Is de brief goed leesbaar?").
+• Maak het scherm voor de uitleg: grote letters, veel witruimte, duidelijke kopjes.
+• Voeg een laadscherm en foutmeldingen toe ("De foto is te donker, probeer opnieuw").
+• Denk aan toegankelijkheid: de doelgroep leert Nederlands, dus gebruik eenvoudige knopteksten en eventueel pictogrammen.
+===============================================================================================
+Persoon 2: AI en prompt (het brein)
+• Kies het AI-model met vision en test of het tekst op foto's goed leest.
+• Schrijf de hoofdprompt, bijvoorbeeld: "Je bent een taalhulp. Lees de brief op de foto. Leg hem uit op B1-niveau: korte zinnen, geen jargon, uitleg bij moeilijke woorden."
+• Laat de AI altijd dezelfde structuur teruggeven (zie fase 1).
+• Voeg regels toe voor onleesbare foto's of foto's die geen brief zijn.
+• Test met minstens 10 voorbeeldbrieven en verbeter de prompt op basis van de resultaten.
+• Controleer of het echt B1 is: zinslengte, woordkeuze en geen ambtelijke taal.
+===============================================================================================
+Persoon 3: Backend en koppeling (de verbinding)
+• Bouw het stuk dat de foto van de app naar de AI stuurt en het antwoord terugstuurt.
+• Bewaar de API-sleutel veilig op de server, nooit in de app zelf.
+• Verklein of comprimeer de foto's voor snellere verwerking.
+• Sla foto's niet op, of verwijder ze direct na verwerking (privacy!).
+• Vang fouten op, zoals te grote bestanden, time-outs en een AI die niet reageert.
+• Stem het formaat van de aanvraag en het antwoord af met persoon 1 en 2, bijvoorbeeld in een korte afsprakenlijst.
+===============================================================================================
+Persoon 4: Content, privacy, testen en presentatie (de klant en kwaliteit)
+• Maak 10 tot 15 fictieve voorbeeldbrieven (belastingdienst, gemeente, zorgverzekeraar, huurbrief, boete) en fotografeer of print ze op verschillende manieren.
+• Voeg een duidelijke waarschuwing in de app toe: "Gebruik alleen voorbeeldbrieven, geen echte brieven met persoonsgegevens."
+• Neem contact op met een NT2-docent of Taalhuis (of laat een klasgenoot de klant spelen) voor feedback.
+• Maak een testschema: welke brief, wat ging goed, wat ging fout en wie lost het op.
+• Schrijf een korte handleiding voor docenten.
+• Maak de pitch of demo en de eindpresentatie.
+===============================================================================================
+Fase 3: Samenvoegen en testen (iedereen)
+1.  Persoon 3 verbindt de frontend (1) met de AI (2).
+2.  Persoon 4 test de hele app met alle voorbeeldbrieven.
+3.  Noteer samen de fouten en verdeel ze over de rollen.
+4.  Test nog een keer met een echte gebruiker (docent of cursist), met nepbrieven.
+===============================================================================================
+Fase 4: Afronden
+• Laatste bugs oplossen, privacywaarschuwing controleren en demo oefenen.
+• Persoon 4 leidt de presentatie, maar iedereen laat zijn eigen onderdeel zien.
+Voorbeeld van een tijdsplanning
+Moment
+Wat
+Dag 1
+Fase 1: afspraken en techniek kiezen
+Dag 2-4
+Fase 2: iedereen werkt aan eigen onderdeel
+Dag 5
+Samenvoegen (fase 3)
+Dag 6
+Testen en verbeteren
+Dag 7
+Afronden en presenteren
+Tip: houd elke dag een korte stand-up van 10 minuten ("Wat heb ik gedaan, wat doe ik vandaag, waar loop ik vast?"). Zo merk je snel als een onderdeel niet op het andere aansluit.
